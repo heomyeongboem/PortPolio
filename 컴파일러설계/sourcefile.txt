@@ -1,0 +1,39 @@
+void bubble_sort(int B[][N], int col, int n)
+{  // this is a line comment
+	int i,j, temp;
+ /* this is 
+   two line comment
+   */
+
+char x[4]="xyzw";// practice that I make
+	for (i=n-1; i >= 1; i--)
+		for (j = 0; j < i; j++)  
+			if (B[j][col] > B[j + 1][col]) {
+				temp = B[j][col];
+				B[j][col] = B[j + 1][col];
+				B[j + 1][col] = temp;
+			}		
+}
+
+void print_array(int s[][N], int n) {
+	int i, j;
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < N; j++)
+			printf("%5d ", s[i][j]);
+		printf("\n");
+                        printf("\rxyz"); // practice that I make
+                        printf("\nxyz"); // practice that I make
+                        printf("\txyz"); // practice that I make
+                        printf("\0xyz"); // practice that I make
+                        printf("\1xyz"); // practice that I make
+
+
+	}
+	printf("\n");
+}
+
+
+
+
+
+
